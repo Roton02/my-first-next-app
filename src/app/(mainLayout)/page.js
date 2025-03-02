@@ -7,16 +7,19 @@ export const metadata = {
   description: 'this is home description ',
 }
 
-const HomePage = () => {
+const HomePage = async () => {
+  const res = await fetch('http://localhost:3004/products')
+  const data = await res.json()
+  console.log(data)
   return (
     <div>
-      <Image
-        src='https://static.vecteezy.com/system/resources/thumbnails/021/058/855/small/happy-ramadan-happy-eid-crescent-of-ramadan-islamic-moon-ramadan-mubarak-and-ramadan-kareem-concept-photo.jpg'
-        alt='image '
-        width={500}
-        height={500}
-      ></Image>
-      <Image src={romadanImg} alt='image ' width={500} height={500}></Image>
+      <h1>Home Page</h1>
+      {/* <Image src={romadanImg} alt='happy ramadan' width={500} height={300} /> */}
+      <ul className='text-white'>
+        {data.map((product) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
     </div>
   )
 }

@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "price": 59.99,
+      "image": "https://via.placeholder.com/150/0000FF/FFFFFF?text=Headphones"
+    },
+    {
+      "id": "2",
+      "name": "Gaming Mouse",
+      "price": 29.99,
+      "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=Mouse"
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard",
+      "price": 79.99,
+      "image": "https://via.placeholder.com/150/008000/FFFFFF?text=Keyboard"
+    }
+  ],
+  "reviews": [
+    { "id": "1", "text": "Great sound quality!", "productId": "1" },
+    { "id": "2", "text": "Very responsive and comfortable.", "productId": "2" },
+    { "id": "3", "text": "Keys feel amazing while typing!", "productId": "3" }
+  ],
+  "store": {
+    "name": "TechZone"
+  }
+}
